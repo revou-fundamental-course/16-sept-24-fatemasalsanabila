@@ -5,9 +5,148 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="css\style.css">
+    
 </head>
 
-<body>
+<body class="container">
     
+
+     </div>
+    <header class="main-header">
+        <!-- Logo -->
+        <div class="logo-icon"></div>
+
+        <!-- Navigation -->
+        <nav class="menu">
+            <a href="#section-home">Home</a>
+            <a href="#section-our-profile">Our Profile</a>
+            <a href="#section-portfolio">About Me</a>
+            <a href="#section-message-us">Message Us</a>
+        </nav>
+    </header>
+
+    <hr />
+    <main>
+        <!-- Home -->
+        <section id="section-home">
+            <header>
+                <h1 class="inline">Hi  <h1 class="inline" id="user-name">User</h1>, Welcome to My Website</h1>
+            </header>
+
+            <article>
+                <p>selamat datang</p>
+
+                <!-- Photo Banner -->
+                 <div class="photo-banner photo-1"></div>
+                 <div class="photo-banner photo-2"></div>
+                 <div class="photo-banner photo-3"></div>
+            </article>
+        </section>
+
+        <hr />
+
+        <!-- Our Profile -->
+        <section id="section-our-profile">
+            <header>
+                <h1 style="text-align: center;">Our Profile</h1>
+            </header>
+            <article>
+                <p  class="article">Alam adalah hadiah yang harus kita jaga dan lestarikan, agar generasi mendatang dapat terus menikmati pesonanya. Alam menyimpan sejuta keindahan yang tak terlukiskan dengan kata-kata.Menghabiskan waktu di alam bebas juga memberikan manfaat kesehatan, baik fisik maupun mental.
+                    
+                    Melalui keindahannya, alam mengajarkan kita untuk bersyukur atas kehidupan ini dan menghargai bumi yang kita pijak. Dari puncak gunung yang menjulang tinggi hingga lembah yang tenang, setiap sudut bumi menawarkan pemandangan yang memukau. Keajaiban alam ini hadir dalam berbagai bentuk: hamparan padang rumput hijau yang luas, air terjun yang mengalir deras dari tebing, hingga hutan rimba yang dipenuhi kehidupan liar. 
+                
+                    Keindahan alam juga bisa kita nikmati melalui perubahan musim. Saat musim semi tiba, bunga-bunga bermekaran dengan warna-warni cerah, menghadirkan pemandangan indah yang menyegarkan jiwa. Musim gugur membawa pemandangan dedaunan berwarna emas dan merah yang jatuh perlahan, sementara musim dingin menawarkan salju putih yang menutupi setiap permukaan, menciptakan suasana magis. 
+                    
+                    Tidak hanya memanjakan mata, alam juga memberikan ketenangan dan inspirasi bagi jiwa. Suara gemericik air, hembusan angin di antara pepohonan, dan kicauan burung semuanya seakan menjadi alunan musik alami yang menyegarkan pikiran.  </p>
+            </article>
+
+            <div class="profile-icon-container">
+                <div>
+                    <div class="profile-icon photo-1"></div>
+                    <h4>Gunung</h4>
+                </div>
+    
+                <div>
+                    <div class="profile-icon photo-2"></div>
+                    <h4>Tebing</h4>
+                </div>
+            </div>
+
+        </section>
+
+        <hr />
+
+        <!-- Portfolio -->
+        <section id="section-portfolio">
+            <header>
+                <h1 style="text-align: center;">About Me</h1>
+            </header>
+            <article>
+                <p class="article-me">
+                    Hai, teman - teman. Nama saya Fatema Salsa Nabila, Saya adalah seorang mahasiswa semester 5 dijurusan Sistem Informasi yang mengemban ilmu di STMIK Triguna Dharma medan.
+                    Sedikit tentang saya, Saya adalah anak kedua dari dua bersaudara. Untuk makanana saya adalah seorang yang sangat pemilih. Makanan saya sangat suka sekali dengan taun, ayam 
+                    dan makanan apapun yang mengandung pedas. Funfact dari saya, saya sama sekali tidak suka sayur. Oh iya, Saya juga suka Fotografi, travelling dan belakangan ini saya lagi rutin
+                    menjalani olahraga badminton. Berbica tentang IT, walaupun saya sedang mengemban ilmu di bidang IT, saya adalah seorang pemula di bidang IT. Sejujurnya saya sedang mencari 
+                    jati diri. Maka dari itu sekarang saya lagi giat belajar hal ini di berbagai course dan bootcamp. Mungkin itu saja perkenalan singkat dari saya. Terima Kasih teman - teman
+                </p>
+            </article>
+        </section>
+
+        <hr />
+
+        <!-- Message Us -->
+        <section id="section-message-us">
+            <header>
+                <h1 style="text-align: center;">Message Us</h1>
+            </header>
+
+            <section class="form-container">
+                <!-- Form -->
+                <form onsubmit="return false;">
+                    <div>
+                        <label for="input-name">Nama : </label>
+                        <input class="form-nama" type="text" name="" id="input-name" required>
+                    </div>
+                    <div>
+                        <label for="tanggal-lahir">Tanggal Lahir :</label>
+                        <input class="form-tgllahir" type="date" id="tanggal-lahir" name="tanggal-lahir" value="yyyy/MM/dd" required>
+                    </div>
+                    <div>
+                        <label>Jenis Kelamin :</label>
+                        <input type="radio" id="laki-laki" name="jenis-kelamin" value="Laki-Laki">
+                        <label for="laki-laki">Laki-Laki</label>
+                        <input type="radio" id="perempuan" name="jenis-kelamin" value="Perempuan">
+                        <label for="perempuan">Perempuan</label>
+                    </div>
+                    <div>
+                        <label for="input-message">pesan : </label>
+                        <input class="form-pesan" type="text" name="" id="input-message">
+                    </div>
+
+                    <button class="submit" type="submit" onclick="validateForm()">Submit</button>
+                </form>
+
+                <!-- Result Form -->
+                <div class="result">
+                    <p>Nama : <span id="result-nama"></span></p>
+                    <p>Tanggal Lahir : <span id="result-tanggal-lahir"></span></p>
+                    <p>Jenis Kelamin : <span id="result-jenis-kelamin"></span></p>
+                    <p>Pesan : <span id="result-pesan"></span></p>
+
+                </div>
+            </section>
+
+            </form>
+        </section>
+
+        <hr />
+
+    </main>
+
+    <footer>
+        <p style="text-align: center;">Made by Fatem@2024</p>
+    </footer>
+
+    <script src="js\script.js"></script>
 </body>
 </html>
